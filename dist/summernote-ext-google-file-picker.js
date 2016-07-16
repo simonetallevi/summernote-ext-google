@@ -20,7 +20,13 @@
          */
         'googleFilePicker': function (context) {
             var self = this;
-            var options = $.extend({}, context.options.googlePicker, context.options.googleFilePicker);
+            var options = $.extend({
+                css :{
+                    link : "",
+                    name : "",
+                    icon : "padding-right: 5px;"
+                }
+            }, context.options.googlePicker, context.options.googleFilePicker);
             var $googlePicker = $.googlePicker(options);
             // ui has renders to build ui elements.
             //  - you can create a button with `ui.button`
@@ -37,9 +43,9 @@
                             onLoaded : function(){
                                 console.log("Google Picker Loaded");
                                 context.invoke('editor.pasteHTML', '<style>' +
-                                    '.google-file-picker-link{}' +
-                                    '.google-file-picker-name{}' +
-                                    '.google-file-picker-icon{padding-right: 5px;}' +
+                                    '.google-file-picker-link{'+options.css.link+'}' +
+                                    '.google-file-picker-name{'+options.css.name+'}' +
+                                    '.google-file-picker-icon{'+options.css.icon+'}' +
                                     '</style>');
                             },
                             onPicked : function(docs){
@@ -48,7 +54,7 @@
                                     return;
                                 docs.docs.forEach(function(doc){
                                     context.invoke('editor.pasteHTML', '' +
-                                        '<a class="google-file-picker-link" href="http://drive.google.com/uc?export=download&id='+doc.id+'">' +
+                                        '<a class="google-file-picker-link" href="'+doc.url+'">' +
                                             '<img class="google-file-picker-icon" src="'+doc.iconUrl+'"><span class="google-file-picker-name">'+doc.name+'</span>' +
                                         '</a>');
                                 });

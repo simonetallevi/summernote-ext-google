@@ -20,7 +20,10 @@
          */
         'googleImgPicker': function (context) {
             var self = this;
-            var options = $.extend({}, context.options.googlePicker, context.options.googleImgPicker);
+            var options = $.extend({
+                css :{
+                    img : "width: 300px;"
+            }}, context.options.googlePicker, context.options.googleImgPicker);
             var $googlePicker = $.googlePicker(options);
             // ui has renders to build ui elements.
             //  - you can create a button with `ui.button`
@@ -37,7 +40,7 @@
                             onLoaded : function(){
                                 console.log("Google Picker Loaded");
                                 context.invoke('editor.pasteHTML', '<style>' +
-                                    '.google-img-picker{width: 300px;}' +
+                                    '.google-img-picker{'+options.css.img+'}' +
                                     '</style>');
                             },
                             onPicked : function(docs){
