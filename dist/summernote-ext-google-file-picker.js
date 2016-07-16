@@ -24,7 +24,7 @@
                 css :{
                     link : "",
                     name : "",
-                    icon : "padding-right:3px;padding-left:10px;"
+                    icon : "padding-right:3px;"
                 }
             }, context.options.googlePicker, context.options.googleFilePicker);
             var $googlePicker = $.googlePicker(options);
@@ -55,7 +55,7 @@
                                 docs.docs.forEach(function(doc){
                                     context.invoke('editor.pasteHTML', '' +
                                         '<a class="google-file-picker-link" href="'+doc.url+'">' +
-                                            '<span style="white-space: nowrap">' +
+                                            '<span style="white-space: nowrap; padding-left:10px;">' +
                                         '       <img class="google-file-picker-icon" src="'+doc.iconUrl+'">' +
                                         '       <span class="google-file-picker-name">'+doc.name+'</span>' +
                                         '   </span>' +
