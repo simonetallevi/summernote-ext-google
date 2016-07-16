@@ -4,4 +4,4 @@ The project provides two extensions for Summernote editor. The extensions allow 
 
 ## Examples
 
-![alt tag](https://raw.githubusercontent.com/simonetallevi/summernotes-ext-google/master/doc/esempio.PNG)
+![alt tag](https://rawgit.com/simonetallevi/summernote-ext-google/master/doc/esempio.PNG)
