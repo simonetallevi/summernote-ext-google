@@ -2,9 +2,13 @@
 
 The project provides two extensions for Summernote editor. The extensions allow to select Image and Files from your Google Drive.
 
+## How-To
+
+Working on it.
+
 ## Examples
 
-** [Live Demo](https://simone-tallevi.appspot.com/summernote-ext-google-picker.html) **
+ [**Live Demo**](https://simone-tallevi.appspot.com/summernote-ext-google-picker.html)
 
 ### Summernote Ext Google Image Picker
 
