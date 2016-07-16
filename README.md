@@ -4,6 +4,8 @@ The project provides two extensions for Summernote editor. The extensions allow 
 
 ## Examples
 
+** [Live Demo](https://simone-tallevi.appspot.com/summernote-ext-google-picker.html) **
+
 ### Summernote Ext Google Image Picker
 
 ![alt tag](https://rawgit.com/simonetallevi/summernote-ext-google/master/doc/esempio.PNG)
