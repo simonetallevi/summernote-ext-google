@@ -4,7 +4,13 @@ The project provides two extensions for Summernote editor. The extensions allow 
 
 ## Examples
 
+### Summernote Ext Google Image Picker
+
 ![alt tag](https://rawgit.com/simonetallevi/summernote-ext-google/master/doc/esempio.PNG)
+
+### Summernote Ext Google File Picker
+
+![alt tag](https://rawgit.com/simonetallevi/summernote-ext-google/master/doc/esempio-2.PNG)
 
 ## License
 
