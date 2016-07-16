@@ -55,7 +55,10 @@
                                 docs.docs.forEach(function(doc){
                                     context.invoke('editor.pasteHTML', '' +
                                         '<a class="google-file-picker-link" href="'+doc.url+'">' +
-                                            '<img class="google-file-picker-icon" src="'+doc.iconUrl+'"><span class="google-file-picker-name">'+doc.name+'</span>' +
+                                            '<span style="white-space: nowrap">' +
+                                        '       <img class="google-file-picker-icon" src="'+doc.iconUrl+'">' +
+                                        '       <span class="google-file-picker-name">'+doc.name+'</span>' +
+                                        '   </span>' +
                                         '</a>');
                                 });
                             }
