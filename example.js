@@ -7,11 +7,11 @@ angular.module('GooglePickerExampleApp', ['summernote'])
                 ['insert', ['googleImgPicker', 'googleFilePicker']]
             ],
             googleFilePicker :{
-                features : [],
+                features : ["MULTISELECT_ENABLED"],
                 views : ['DocsView().setIncludeFolders(true).setParent("root")']
             },
             googleImgPicker:{
-                features : [],
+                features : ["MULTISELECT_ENABLED"],
                 views : ['DocsView(google.picker.ViewId.DOCS_IMAGES_AND_VIDEOS).setIncludeFolders(true).setParent("root")']
             },
             googlePicker:{

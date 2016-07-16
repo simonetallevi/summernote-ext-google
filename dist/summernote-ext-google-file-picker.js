@@ -24,7 +24,7 @@
                 css :{
                     link : "",
                     name : "",
-                    icon : "padding-right: 5px;"
+                    icon : "padding-right:3px;padding-left:10px;"
                 }
             }, context.options.googlePicker, context.options.googleFilePicker);
             var $googlePicker = $.googlePicker(options);
