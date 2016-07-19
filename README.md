@@ -1,10 +1,20 @@
 ## Summary
 
-The project provides two extensions for Summernote editor. The extensions allow to select Image and Files from your Google Drive.
+The project provides two extensions for Summernote editor. The extensions allow to select Image and Files from your Google Drive 
+by interacting with the Google Picker API :
+* [Google Picker API Overview](https://developers.google.com/picker/)
+* [Google Picker API Docs](https://developers.google.com/picker/docs/)
+
+**Requirements:** [Angular Summernote 0.8.1+](https://github.com/summernote/angular-summernote)
 
 ## How-To
 
 Working on it.
+
+### Configuration
+
+Google Picker needs to connect to the Google API using an application credentials 
+(Api Key and client ID). For more information on how to create an application/project, please refer to [https://developers.google.com/drive/web/](https://developers.google.com/drive/web/).
 
 ## Examples
 
